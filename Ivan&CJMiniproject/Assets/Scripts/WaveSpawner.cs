@@ -29,6 +29,7 @@ public class WaveSpawner : MonoBehaviour
     private SpawnState state = SpawnState.COUNTING;
 
     public Text waveText;
+    public Text waveCompletedText;
 
     void Start()
     {
@@ -40,6 +41,7 @@ public class WaveSpawner : MonoBehaviour
         waveCountdown = timeBetweenWaves;
 
         waveText.enabled = false;
+        waveCompletedText.enabled = false;
     }
 
     void Update()
@@ -75,6 +77,8 @@ public class WaveSpawner : MonoBehaviour
 
     void WaveCompleted()
     {
+        StartCoroutine(waveCompletedtext());
+
         Debug.Log("Wave Completed!");
 
         state = SpawnState.COUNTING;
@@ -89,6 +93,14 @@ public class WaveSpawner : MonoBehaviour
         {
             nextWave++;
         }
+    }
+
+    IEnumerator waveCompletedtext()
+    {
+        waveCompletedText.enabled = true;
+        waveCompletedText.text = "Wave Completed!";
+        yield return new WaitForSeconds(2f);
+        waveCompletedText.enabled = false;
     }
 
     bool EnemyIsAlive()
@@ -108,16 +120,14 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave (Wave _wave)
     {
-        /*
-        waveText.enabled = true;
-        waveText.text = "Wave " + nextWave;
-        yield return new WaitForSeconds(3f);
-        waveText.enabled = false;
-        */
-
         Debug.Log("Spawning Wave: " + _wave.name);
 
         state = SpawnState.SPAWNING;
+
+        waveText.enabled = true;
+        waveText.text = "Wave " + (nextWave + 1);
+        yield return new WaitForSeconds(3f);
+        waveText.enabled = false;
 
         // Spawn
         for (int i = 0; i <_wave.count; i++)
