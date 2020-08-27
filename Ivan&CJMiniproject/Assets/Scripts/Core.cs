@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Core : MonoBehaviour
 {
@@ -26,6 +27,11 @@ public class Core : MonoBehaviour
         {
             coreLives -= 10;
             coreText.text = "Health: " + coreLives;
+
+            if (coreLives <= 0)
+            {
+                SceneManager.LoadScene(3);
+            }
         }
     }
 }

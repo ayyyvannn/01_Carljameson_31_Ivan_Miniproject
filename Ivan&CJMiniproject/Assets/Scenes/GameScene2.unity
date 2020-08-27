@@ -1704,25 +1704,27 @@ MonoBehaviour:
   - name: Wave 1
     enemy:
     - {fileID: 9139036228521598109, guid: c7da3416f3429b24799078460c2cc58a, type: 3}
-    - {fileID: 9139036228521598109, guid: 96856bd2b14c6274ea08f80aad98dea9, type: 3}
+    - {fileID: 9139036228521598109, guid: 5b334d1f48e613940bc403d1df2d3ba9, type: 3}
+    count: 5
+    rate: 1
+  - name: Wave 2
+    enemy:
+    - {fileID: 9139036228521598109, guid: c7da3416f3429b24799078460c2cc58a, type: 3}
+    - {fileID: 9139036228521598109, guid: 5b334d1f48e613940bc403d1df2d3ba9, type: 3}
+    count: 7
+    rate: 1
+  - name: Wave 3
+    enemy:
+    - {fileID: 9139036228521598109, guid: c7da3416f3429b24799078460c2cc58a, type: 3}
+    - {fileID: 9139036228521598109, guid: 5b334d1f48e613940bc403d1df2d3ba9, type: 3}
     count: 10
     rate: 1
-  - name: 
-    enemy: []
-    count: 0
-    rate: 0
-  - name: 
-    enemy: []
-    count: 0
-    rate: 0
-  - name: 
-    enemy: []
-    count: 0
-    rate: 0
-  - name: 
-    enemy: []
-    count: 0
-    rate: 0
+  - name: Wave 4
+    enemy:
+    - {fileID: 9139036228521598109, guid: c7da3416f3429b24799078460c2cc58a, type: 3}
+    - {fileID: 9139036228521598109, guid: 5b334d1f48e613940bc403d1df2d3ba9, type: 3}
+    count: 15
+    rate: 1
   spawnPoints:
   - {fileID: 717560466}
   - {fileID: 979815792}

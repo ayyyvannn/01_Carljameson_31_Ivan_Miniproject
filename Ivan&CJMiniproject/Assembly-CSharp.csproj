@@ -58,8 +58,11 @@
     <Compile Include="Assets\Scripts\bulletscript.cs" />
     <Compile Include="Assets\Scripts\Core.cs" />
     <Compile Include="Assets\Scripts\EnemyScript1.cs" />
+    <Compile Include="Assets\Scripts\EnemyScript2.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\LoseSound.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
+    <Compile Include="Assets\Scripts\PlaySound.cs" />
     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\WaveSpawner2.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

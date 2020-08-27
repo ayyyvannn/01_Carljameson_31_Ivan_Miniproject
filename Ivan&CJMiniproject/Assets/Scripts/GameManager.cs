@@ -22,4 +22,9 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void restartButton()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

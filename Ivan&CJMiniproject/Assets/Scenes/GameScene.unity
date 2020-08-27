@@ -1953,7 +1953,7 @@ MonoBehaviour:
   timeBetweenWaves: 5
   waveCountdown: 0
   waveText: {fileID: 1659526316}
-  waveCompletedText: {fileID: 837088130}
+  wavecompletedText: {fileID: 837088130}
 --- !u!4 &978857005
 Transform:
   m_ObjectHideFlags: 0
@@ -2462,6 +2462,12 @@ Transform:
 --- !u!1 &1518115194 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1119361290516882649, guid: 004c85c46b39e294dabb918e4035156f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1119361289770363187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1518115195 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1119361290516882653, guid: 004c85c46b39e294dabb918e4035156f,
     type: 3}
   m_PrefabInstance: {fileID: 1119361289770363187}
   m_PrefabAsset: {fileID: 0}
